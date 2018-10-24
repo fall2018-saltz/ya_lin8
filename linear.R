@@ -3,9 +3,9 @@
 #dependent variable and hotelSize, checkInSat, hotelState, hotelClean, hotelFriendly, gender, guestAge,
 #lengthOfStay and whenBookedTrip as the independent variables
 #the summary() summarizes the various data values of variable "linmod"
-model1=lm(overallCustSat~hotelSize+checkInSat+hotelState+hotelClean+hotelFriendly+gender+guestAge+lengthOfStay+whenBookedTrip,data = dataset)
-model1
-summary(model1)
+linmod  <- lm(overallCustSat~.,data = hData)
+linmod
+summary(linmod)
 #r-squared = 0.6702
 #adjusted r-squared: = 0.6682
 
@@ -77,8 +77,8 @@ summary(model1)
 
 
 #according to me, hotelSize is the best independent variable to predict customer satisfaction
-model2=lm(overallCustSat~hotelSize,data=hData)
-summary(model2)
+linmod_hotelSize <- lm(overallCustSat~hotelSize,data=hData)
+summary(linmod_hotelSize)
 # Estimate Std. Error t value Pr(>|t|)
 # (Intercept) 7.0984171  0.0306494 231.600   <2e-16 ***
 # hotelSize   0.0001120  0.0001934   0.579    0.563   
@@ -88,3 +88,17 @@ summary(model2)
 #comparing linear and multiple regressions, we see that the value of r-squared reduces significantly
 #when applying linear regression. Hence, multiple regression is a more accurate method for predicting
 #customer satisfaction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
