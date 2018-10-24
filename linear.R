@@ -69,6 +69,7 @@ summary(m1)
 #all the above factors are the most important dependent factors for the model
 
 #out of them i think friendliness of staff is most important
+#so i'm building the model with it
 m2=lm(overallCustSat~hotelFriendly,data=hData)
 m2
 summary(m2)
