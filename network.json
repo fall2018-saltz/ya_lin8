@@ -17,12 +17,15 @@
     ],
     "nodes": [
         {
-            "name": "clean.R"
+            "name": "data.csv"
         },
         {
-            "name": "data.csv"
+            "assigned_to": "not assigned",
+            "desc": "",
+            "name": "clean.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-24 03:13:29",
+    "updated_at": "2018-10-24 03:13:40",
     "url": "https://github.com/fall2018-saltz/ya_lin8"
 }
