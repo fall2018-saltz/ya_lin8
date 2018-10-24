@@ -68,6 +68,6 @@ summary(m1)
 #age of the guest (in years)
 #all the above factors are the most important dependent factors for the model
 
-m2=lm(overallCustSat~checkInSat,data=hData)
+m2=lm(overallCustSat~hotelFriendly,data=hData)
 m2
 summary(m2)
