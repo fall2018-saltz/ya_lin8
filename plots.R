@@ -6,28 +6,14 @@ library(dplyr)
 #customer satisfaction will be plotted on the y-axis as it is the dependent variable
 #jitter() adds a small amount of noise to the numeric vector
 #plotting hotelsize vs customer satisfaction
-plot1=ggplot(hData,aes(jitter(hotelSize),overallCustSat))
-biplot1=biplot1 + geom_point()
+p1=ggplot(hData,aes(jitter(hotelSize),overallCustSat))+ geom_point()
+p1
 
 #plotting check-in satisfaction vs customer satisfaction
-biplot2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))
-biplot2=biplot2 + geom_point()
+p2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))+ geom_point()
+p2
 
-#converting all state names to lower case because R cannot process capital letters
-hData$hotelState=tolower(hData$hotelState)
-#turning data from the maps package into a data frame suitable for plotting with ggplot2
-us=map_data("state")
-
-#initializing  a ggplot object and passing dataset as the input data with map ID as hotelState
-biplot3=ggplot(hData, aes(map_id = hotelState))
-#creating a map visualization
-biplot3=biplot3 + geom_map(map = us, aes(fill = factor(hData$overallCustSat)))
-#defining the x and y axes values of the map
-#coord_map() handles the distortion and aspect ratio of the map
-biplot3=biplot3 + expand_limits(x = us$long, y = us$lat) + coord_map()
-#ggtitle() gives a title to the map
-biplot3=biplot3 + ggtitle("Map of color coded USA")
-biplot3
+p3=ggplot(hData,aes(jitter(gender),overallCustSat))+geom_point()
 
 #plotting hotelClean vs customer satisfaction
 biplot4=ggplot(hData,aes(jitter(hotelClean),overallCustSat))
