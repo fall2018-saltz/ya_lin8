@@ -14,6 +14,7 @@ p2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))+ geom_point()
 p2
 
 #the plot has to be made to represent states
+#hence create a map
 hData$hotelState <- tolower(hData$hotelState)
 us=map_data("state")
 p3=ggplot(hData, aes(map_id = hotelState))
