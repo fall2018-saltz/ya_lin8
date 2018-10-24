@@ -78,3 +78,4 @@ summary(m2)
 #F-statistic:  6089 on 1 and 9998 DF,  p-value: < 2.2e-16
 
 #here the R-squared is 0.3785
+#we can tell that when hotelFriendly is the only dependent variable the model is not that good
