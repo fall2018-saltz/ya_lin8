@@ -69,3 +69,4 @@ summary(m1)
 #all the above factors are the most important dependent factors for the model
 
 m2=lm(overallCustSat~checkInSat,data=hData)
+m2
