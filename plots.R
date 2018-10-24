@@ -37,6 +37,7 @@ p5
 
 #to usethe library of dplyr
 #for data manipuations
+#here to calculate the average and then draw the plot based on that
 library(dplyr)
 genMean= hData %>% group_by(gender) %>% summarize(m1 = mean(overallCustSat))
 genMean=as.data.frame(genMean)
