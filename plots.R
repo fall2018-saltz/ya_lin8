@@ -3,8 +3,8 @@
 library(ggplot2)
 
 
-#customer satisfaction will be plotted on the y-axis as it is the dependent variable
-#jitter() adds a small amount of noise to the numeric vector
+#dependent variable overallCustSat is on y-axis
+
 #plotting hotelsize vs customer satisfaction
 p1=ggplot(hData,aes(jitter(hotelSize),overallCustSat))+ geom_point()
 p1
