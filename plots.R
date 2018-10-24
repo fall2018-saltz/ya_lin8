@@ -23,7 +23,7 @@ p3=p3 + geom_map(map = us, aes(fill = factor(hData$overallCustSat)))
 #defining the x and y axes values of the map
 #coord_map() handles the distortion and aspect ratio of the map
 p3=p3+ expand_limits(x = us$long, y = us$lat) + coord_map()
-p3=p3+ ggtitle("Map of color coded USA")
+p3=p3+ ggtitle("USA Map")
 p3
 
 
