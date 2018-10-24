@@ -1,7 +1,7 @@
 
-#installing llibrary for ggplot and dplyr
+#to use the ggplot2 package
 library(ggplot2)
-library(dplyr)
+
 
 #customer satisfaction will be plotted on the y-axis as it is the dependent variable
 #jitter() adds a small amount of noise to the numeric vector
