@@ -13,15 +13,11 @@ p1
 p2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))+ geom_point()
 p2
 
-#converting all state names to lower case because R cannot process capital letters
+#the plot has to be made to represent states
 hData$hotelState <- tolower(hData$hotelState)
-#turning data from the maps package into a data frame suitable for plotting with ggplot2
 us=map_data("state")
 p3=ggplot(hData, aes(map_id = hotelState))
-#creating a map visualization
 p3=p3 + geom_map(map = us, aes(fill = factor(hData$overallCustSat)))
-#defining the x and y axes values of the map
-#coord_map() handles the distortion and aspect ratio of the map
 p3=p3+ expand_limits(x = us$long, y = us$lat) + coord_map()
 p3=p3+ ggtitle("USA Map")
 p3
@@ -38,6 +34,7 @@ p5
 #to usethe library of dplyr
 #for data manipuations
 #here to calculate the average and then draw the plot based on that
+#this is because the gender is a categorical variable
 library(dplyr)
 genMean= hData %>% group_by(gender) %>% summarize(m1 = mean(overallCustSat))
 genMean=as.data.frame(genMean)
