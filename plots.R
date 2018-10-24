@@ -14,7 +14,7 @@ biplot2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))
 biplot2=biplot2 + geom_point()
 
 #converting all state names to lower case because R cannot process capital letters
-dataset$hotelState=tolower(hData$hotelState)
+hData$hotelState=tolower(hData$hotelState)
 #turning data from the maps package into a data frame suitable for plotting with ggplot2
 us=map_data("state")
 
