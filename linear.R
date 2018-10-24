@@ -63,7 +63,9 @@ summary(m1)
 
 
 
-#The customer's survey response to their checkin experience,The customer’s survey response on the friendliness of the staff
+#The customer's survey response to their checkin experience,
+#The customer’s survey response on the friendliness of the staff
+#age of the guest (in years)
 
 linmod_hotelSize <- lm(overallCustSat~hotelSize,data=hData)
 summary(linmod_hotelSize)
