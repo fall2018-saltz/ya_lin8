@@ -62,6 +62,8 @@ summary(m1)
 #F-statistic: 19.09 on 37 and 57 DF,  p-value: < 2.2e-16
 
 
+
+#I am taking the checkInSat as the most important independent significnt variable 
 linmod_hotelSize <- lm(overallCustSat~hotelSize,data=hData)
 summary(linmod_hotelSize)
 # Estimate Std. Error t value Pr(>|t|)
