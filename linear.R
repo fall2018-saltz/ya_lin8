@@ -1,6 +1,7 @@
 
 #to predict the model with customer satisfaction as dependent variabe
 #here all the othr variables are dependent except freeText
+#hence remove it from the model
 m1=lm(overallCustSat~.-freeText,data = hData)
 m1
 summary(m1)
