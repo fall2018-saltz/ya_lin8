@@ -70,3 +70,4 @@ summary(m1)
 
 m2=lm(overallCustSat~checkInSat,data=hData)
 m2
+summary(m2)
