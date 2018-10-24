@@ -56,8 +56,11 @@
             "desc": "",
             "name": "linear.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "p1.png"
         }
     ],
-    "updated_at": "2018-10-24 03:58:33",
+    "updated_at": "2018-10-24 22:18:25",
     "url": "https://github.com/fall2018-saltz/ya_lin8"
 }
