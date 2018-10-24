@@ -14,6 +14,7 @@ p2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))+ geom_point()
 p2
 
 p3=ggplot(hData,aes(jitter(gender),overallCustSat))+geom_point()
+p3
 
 #plotting hotelClean vs customer satisfaction
 biplot4=ggplot(hData,aes(jitter(hotelClean),overallCustSat))
