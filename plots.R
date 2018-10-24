@@ -6,7 +6,7 @@ library(dplyr)
 #customer satisfaction will be plotted on the y-axis as it is the dependent variable
 #jitter() adds a small amount of noise to the numeric vector
 #plotting hotelsize vs customer satisfaction
-biplot1=ggplot(hData,aes(jitter(hotelSize),overallCustSat))
+plot1=ggplot(hData,aes(jitter(hotelSize),overallCustSat))
 biplot1=biplot1 + geom_point()
 
 #plotting check-in satisfaction vs customer satisfaction
