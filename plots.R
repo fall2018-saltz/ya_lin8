@@ -35,7 +35,8 @@ p4
 p5=ggplot(hData,aes(jitter(hotelFriendly),overallCustSat))+geom_point()
 p5
 
-
+genMean=hData %>% group_by(gender) %>% summarize(mean1 = mean(overallCustSat))
+genMean=as.data.frame(genMean)
 p6=ggplot(hData,aes(gender,overallCustSat))+ geom_point()
 p6
 
