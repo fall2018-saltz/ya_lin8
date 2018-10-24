@@ -3,7 +3,7 @@
 #dependent variable and hotelSize, checkInSat, hotelState, hotelClean, hotelFriendly, gender, guestAge,
 #lengthOfStay and whenBookedTrip as the independent variables
 #the summary() summarizes the various data values of variable "linmod"
-linmod  <- lm(overallCustSat~.,data = hData)
+linmod  <- lm(overallCustSat~-freeText.,data = hData)
 linmod
 summary(linmod)
 #r-squared = 0.6702
