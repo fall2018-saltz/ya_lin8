@@ -15,6 +15,7 @@ p2
 
 #the plot has to be made to represent states
 #hence create a map
+#it should be based on the states
 hData$hotelState <- tolower(hData$hotelState)
 us=map_data("state")
 p3=ggplot(hData, aes(map_id = hotelState))
