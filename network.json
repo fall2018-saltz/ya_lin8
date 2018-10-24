@@ -20,12 +20,12 @@
             "name": "data.csv"
         },
         {
-            "assigned_to": "not assigned",
+            "assigned_to": "yash",
             "desc": "",
             "name": "clean.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-24 03:13:40",
+    "updated_at": "2018-10-24 03:17:21",
     "url": "https://github.com/fall2018-saltz/ya_lin8"
 }
