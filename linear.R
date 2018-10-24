@@ -73,3 +73,8 @@ summary(m1)
 m2=lm(overallCustSat~hotelFriendly,data=hData)
 m2
 summary(m2)
+#Residual standard error: 0.7456 on 9998 degrees of freedom
+#Multiple R-squared:  0.3785,	Adjusted R-squared:  0.3784 
+#F-statistic:  6089 on 1 and 9998 DF,  p-value: < 2.2e-16
+
+#here the R-squared is 0.3785
