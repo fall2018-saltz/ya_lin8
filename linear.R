@@ -11,7 +11,7 @@ summary(m1)
 #r-square=multiple r-squared=0.9253
 #adjusted r-squared: = 0.8768
 
-#the most significant variables here are, checkInSat,hotelFriendly,guestAge,
+#the most significant variables here are, checkInSat,hotelFriendly,guestAge
 
 #Coefficients:
                           #Estimate Std. Error t value Pr(>|t|)    
@@ -63,7 +63,8 @@ summary(m1)
 
 
 
-#I am taking the checkInSat as the most important independent significnt variable 
+#The customer's survey response to their checkin experience,The customer’s survey response on the friendliness of the staff
+
 linmod_hotelSize <- lm(overallCustSat~hotelSize,data=hData)
 summary(linmod_hotelSize)
 # Estimate Std. Error t value Pr(>|t|)
