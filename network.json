@@ -83,6 +83,16 @@
             ],
             "source": "plots.R",
             "target": "p5.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "p6",
+                    "type": "png"
+                }
+            ],
+            "source": "plots.R",
+            "target": "p6.png"
         }
     ],
     "nodes": [
@@ -126,6 +136,6 @@
             "name": "p6.png"
         }
     ],
-    "updated_at": "2018-10-24 22:22:47",
+    "updated_at": "2018-10-24 22:22:58",
     "url": "https://github.com/fall2018-saltz/ya_lin8"
 }
