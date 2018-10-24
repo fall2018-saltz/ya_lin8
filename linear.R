@@ -80,3 +80,4 @@ summary(m2)
 #here the R-squared is 0.3785
 #we can tell that when hotelFriendly is the only dependent variable the model is not that good
 #so take other dependent variab as well as in above case
+#we can add the checkInSat,guestAge etc as the dependent variables here
