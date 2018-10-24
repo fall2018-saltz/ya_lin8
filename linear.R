@@ -8,8 +8,8 @@ m1
 
 #check the summary for r-square and adjusted r-square
 summary(m1)
-#r-squared = 0.6702
-#adjusted r-squared: = 0.6682
+#r-square=multiple r-squared=0.9253
+#adjusted r-squared: = 0.8768
 
 #based on the p-values found during regression, the hotel state variables, hotel size and 
 #gender variables are statistically significant
