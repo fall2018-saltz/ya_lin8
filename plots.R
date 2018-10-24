@@ -13,7 +13,7 @@ p1
 p2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))+ geom_point()
 p2
 
-p3=ggplot(hData,aes(jitter(gender),overallCustSat))+geom_point()
+p3=ggplot(hData,aes(jitter(hotelState),overallCustSat))+geom_point()
 p3
 
 #plotting hotelClean vs customer satisfaction
@@ -21,27 +21,24 @@ biplot4=ggplot(hData,aes(jitter(hotelClean),overallCustSat))
 biplot4=biplot4 + geom_point()
 
 #plotting hotelFriendly vs customer satisfaction
-biplot5=ggplot(hData,aes(jitter(hotelFriendly),overallCustSat))
-biplot5=biplot5 + geom_point()
+p5=ggplot(hData,aes(jitter(hotelFriendly),overallCustSat))+geom_point()
+p5
 
-#calculating the average satisfaction per gender using dplyr and then plotting the mean using geom_point()
-gendercount=hData %>% group_by(gender) %>% summarize(mean1 = mean(overallCustSat))
-gendercount=as.data.frame(gendercount)
-#plotting average satisfaction per gender vs customer satisfaction
-biplot6=ggplot(gendercount,aes(gender,mean1)) 
-biplot6=biplot6 + geom_point()
+
+biplot6=ggplot(hData,aes(jitter(gender),overallCustSat)+ geom_point()
+p6
 
 #plotting guestAge vs customer satisfaction
-biplot7=ggplot(hData,aes(jitter(guestAge),overallCustSat))
-biplot7=biplot7 + geom_point()
+biplot7=ggplot(hData,aes(jitter(guestAge),overallCustSat))+ geom_point()
+p7
 
 #plotting lengthOfStay vs customer satisfaction
-biplot8=ggplot(hData,aes(jitter(lengthOfStay),overallCustSat))
-biplot8=biplot8 + geom_point()
+p8=ggplot(hData,aes(jitter(lengthOfStay),overallCustSat))+ geom_point()
+p8
 
 #plotting booking time vs customer satisfaction
-biplot9=ggplot(hData,aes(jitter(whenBookedTrip),overallCustSat))
-biplot9=biplot9 + geom_point()
+p9=ggplot(hData,aes(jitter(whenBookedTrip),overallCustSat))+ geom_point()
+p9
 
 # plot1 - most of the observations lie in the 5-10 range but there are a few outliers 
 # plot2 -  most of the observations again lie in the 5-10 range with a few outliers 
