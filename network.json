@@ -23,6 +23,16 @@
             ],
             "source": "data.csv",
             "target": "plots.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "hData",
+                    "type": "csv"
+                }
+            ],
+            "source": "data.csv",
+            "target": "linear.R"
         }
     ],
     "nodes": [
@@ -42,10 +52,12 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "yash",
             "desc": "",
-            "name": "linear.R"
+            "name": "linear.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-24 03:55:01",
+    "updated_at": "2018-10-24 03:58:33",
     "url": "https://github.com/fall2018-saltz/ya_lin8"
 }
