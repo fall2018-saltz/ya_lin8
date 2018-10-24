@@ -13,8 +13,19 @@ p1
 p2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))+ geom_point()
 p2
 
-p3=ggplot(hData,aes(hotelState,overallCustSat))+geom_point()
+#converting all state names to lower case because R cannot process capital letters
+hData$hotelState <- tolower(hData$hotelState$hotelState)
+#turning data from the maps package into a data frame suitable for plotting with ggplot2
+us=map_data("state")
+p3=ggplot(dataset, aes(map_id = hotelState))
+#creating a map visualization
+p3=p3 + geom_map(map = us, aes(fill = factor(hData$overallCustSat)))
+#defining the x and y axes values of the map
+#coord_map() handles the distortion and aspect ratio of the map
+p3=p3+ expand_limits(x = us$long, y = us$lat) + coord_map()
+p3=p3+ ggtitle("Map of color coded USA")
 p3
+
 
 #plotting hotelClean vs customer satisfaction
 p4=ggplot(hData,aes(jitter(hotelClean),overallCustSat))+geom_point()
