@@ -29,7 +29,7 @@ p6=ggplot(hData,aes(gender,overallCustSat))+ geom_point()
 p6
 
 #plotting guestAge vs customer satisfaction
-biplot7=ggplot(hData,aes(jitter(guestAge),overallCustSat))+ geom_point()
+p7=ggplot(hData,aes(jitter(guestAge),overallCustSat))+ geom_point()
 p7
 
 #plotting lengthOfStay vs customer satisfaction
