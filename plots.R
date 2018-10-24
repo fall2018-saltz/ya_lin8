@@ -25,7 +25,7 @@ p5=ggplot(hData,aes(jitter(hotelFriendly),overallCustSat))+geom_point()
 p5
 
 
-p6=ggplot(hData,aes(gender,overallCustSat)+ geom_point()
+p6=ggplot(hData,aes(gender,overallCustSat))+ geom_point()
 p6
 
 #plotting guestAge vs customer satisfaction
