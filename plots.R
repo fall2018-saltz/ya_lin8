@@ -35,6 +35,8 @@ p4
 p5=ggplot(hData,aes(jitter(hotelFriendly),overallCustSat))+geom_point()
 p5
 
+#to usethe library of dplyr
+library(dplyr)
 genMean= hData %>% group_by(gender) %>% summarize(m1 = mean(overallCustSat))
 genMean=as.data.frame(genMean)
 #plotting average satisfaction per gender vs customer satisfaction
