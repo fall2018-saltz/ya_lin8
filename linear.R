@@ -66,29 +66,6 @@ summary(m1)
 #The customer's survey response to their checkin experience,
 #The customer’s survey response on the friendliness of the staff
 #age of the guest (in years)
+#all the above factors are the most important dependent factors for the model
 
-linmod_hotelSize <- lm(overallCustSat~hotelSize,data=hData)
-summary(linmod_hotelSize)
-# Estimate Std. Error t value Pr(>|t|)
-# (Intercept) 7.0984171  0.0306494 231.600   <2e-16 ***
-# hotelSize   0.0001120  0.0001934   0.579    0.563   
-
-# Multiple R-squared:  3.354e-05,	Adjusted R-squared:  -6.648e-05
-
-#comparing linear and multiple regressions, we see that the value of r-squared reduces significantly
-#when applying linear regression. Hence, multiple regression is a more accurate method for predicting
-#customer satisfaction
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+m2=lm(overallCustSat~checkInSat,data=hData)
