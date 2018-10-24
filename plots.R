@@ -14,10 +14,10 @@ p2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))+ geom_point()
 p2
 
 #converting all state names to lower case because R cannot process capital letters
-hData$hotelState <- tolower(hData$hotelState$hotelState)
+hData$hotelState <- tolower(hData$hotelState)
 #turning data from the maps package into a data frame suitable for plotting with ggplot2
 us=map_data("state")
-p3=ggplot(dataset, aes(map_id = hotelState))
+p3=ggplot(hData, aes(map_id = hotelState))
 #creating a map visualization
 p3=p3 + geom_map(map = us, aes(fill = factor(hData$overallCustSat)))
 #defining the x and y axes values of the map
