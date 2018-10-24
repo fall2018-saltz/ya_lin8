@@ -4,6 +4,7 @@ library(ggplot2)
 
 
 #dependent variable overallCustSat is on y-axis
+#all the dependent variables are on the x-axis
 
 #plotting hotelsize vs customer satisfaction
 p1=ggplot(hData,aes(jitter(hotelSize),overallCustSat))+ geom_point()
