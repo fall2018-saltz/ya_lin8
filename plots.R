@@ -6,17 +6,20 @@ library(ggplot2)
 #dependent variable overallCustSat is on y-axis
 #all the dependent variables are on the x-axis
 
-#plotting hotelsize vs customer satisfaction
+
+#hotelsize vs customer satisfaction
 p1=ggplot(hData,aes(jitter(hotelSize),overallCustSat))+ geom_point()
 p1
 
-#plotting check-in satisfaction vs customer satisfaction
+# check-in satisfaction vs customer satisfaction
 p2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))+ geom_point()
 p2
 
 #the plot has to be made to represent states
 #hence create a map
 #it should be based on the states
+
+#hotelState vs overallCustSat
 hData$hotelState <- tolower(hData$hotelState)
 us=map_data("state")
 p3=ggplot(hData, aes(map_id = hotelState))
@@ -26,11 +29,11 @@ p3=p3+ ggtitle("USA Map")
 p3
 
 
-#plotting hotelClean vs customer satisfaction
+#hotelClean vs customer satisfaction
 p4=ggplot(hData,aes(jitter(hotelClean),overallCustSat))+geom_point()
 p4
 
-#plotting hotelFriendly vs customer satisfaction
+#hotelFriendly vs customer satisfaction
 p5=ggplot(hData,aes(jitter(hotelFriendly),overallCustSat))+geom_point()
 p5
 
@@ -41,20 +44,20 @@ p5
 library(dplyr)
 genMean= hData %>% group_by(gender) %>% summarize(m1 = mean(overallCustSat))
 genMean=as.data.frame(genMean)
-#plotting average satisfaction per gender vs customer satisfaction
+#mean of gender vs customer satisfaction
 p6=ggplot(genMean,aes(gender,m1)) 
 p6=p6+geom_point()
 
 
-#plotting guestAge vs customer satisfaction
+#guestAge vs customer satisfaction
 p7=ggplot(hData,aes(jitter(guestAge),overallCustSat))+ geom_point()
 p7
 
-#plotting lengthOfStay vs customer satisfaction
+#lengthOfStay vs customer satisfaction
 p8=ggplot(hData,aes(jitter(lengthOfStay),overallCustSat))+ geom_point()
 p8
 
-#plotting booking time vs customer satisfaction
+#booking time vs customer satisfaction
 p9=ggplot(hData,aes(jitter(whenBookedTrip),overallCustSat))+ geom_point()
 p9
 
