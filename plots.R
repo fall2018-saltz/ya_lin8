@@ -13,7 +13,7 @@ p1
 p2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))+ geom_point()
 p2
 
-p3=ggplot(hData,aes((hotelState),overallCustSat))+geom_point()
+p3=ggplot(hData,aes(hotelState,overallCustSat))+geom_point()
 p3
 
 #plotting hotelClean vs customer satisfaction
@@ -25,7 +25,7 @@ p5=ggplot(hData,aes(jitter(hotelFriendly),overallCustSat))+geom_point()
 p5
 
 
-p6=ggplot(hData,aes(jitter(gender),overallCustSat)+ geom_point()
+p6=ggplot(hData,aes(gender,overallCustSat)+ geom_point()
 p6
 
 #plotting guestAge vs customer satisfaction
