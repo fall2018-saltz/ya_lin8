@@ -50,8 +50,10 @@ p4
 p5=ggplot(hData,aes(jitter(hotelFriendly),overallCustSat))+geom_point()
 p5
 
+#the plot has:
 #positive slope
 #increasing trend
+
 #to usethe library of dplyr
 #for data manipuations
 #here to calculate the average and then draw the plot based on that
@@ -63,7 +65,7 @@ genMean=as.data.frame(genMean)
 p6=ggplot(genMean,aes(gender,m1)) 
 p6=p6+geom_point()
 
-
+#males have higher rating
 #guestAge vs customer satisfaction
 p7=ggplot(hData,aes(jitter(guestAge),overallCustSat))+ geom_point()
 p7
