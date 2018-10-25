@@ -17,6 +17,11 @@ p1
 # check-in satisfaction vs customer satisfaction
 p2=ggplot(hData,aes(jitter(checkInSat),overallCustSat))+ geom_point()
 p2
+#it's almost similar as above
+#the range is between 4-10
+#there are few outliers
+
+
 
 #the plot has to be made to represent states
 #hence create a map
