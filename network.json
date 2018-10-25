@@ -1,0 +1,180 @@
+{
+    "collaborators": [
+        "yash"
+    ],
+    "created_at": "2018-10-24 03:13:09",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "output": "hData",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "hData",
+                    "type": "csv"
+                }
+            ],
+            "source": "data.csv",
+            "target": "plots.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "hData",
+                    "type": "csv"
+                }
+            ],
+            "source": "data.csv",
+            "target": "linear.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "p1",
+                    "type": "png"
+                }
+            ],
+            "source": "plots.R",
+            "target": "p1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "p2",
+                    "type": "png"
+                }
+            ],
+            "source": "plots.R",
+            "target": "p2.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "p3",
+                    "type": "png"
+                }
+            ],
+            "source": "plots.R",
+            "target": "p3.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "p4",
+                    "type": "png"
+                }
+            ],
+            "source": "plots.R",
+            "target": "p4.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "p5",
+                    "type": "png"
+                }
+            ],
+            "source": "plots.R",
+            "target": "p5.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "p6",
+                    "type": "png"
+                }
+            ],
+            "source": "plots.R",
+            "target": "p6.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "p7",
+                    "type": "png"
+                }
+            ],
+            "source": "plots.R",
+            "target": "p7.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "p8",
+                    "type": "png"
+                }
+            ],
+            "source": "plots.R",
+            "target": "p8.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "p9",
+                    "type": "png"
+                }
+            ],
+            "source": "plots.R",
+            "target": "p9.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "data.csv"
+        },
+        {
+            "assigned_to": "yash",
+            "desc": "",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "yash",
+            "desc": "",
+            "name": "plots.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "yash",
+            "desc": "",
+            "name": "linear.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "p1.png"
+        },
+        {
+            "name": "p2.png"
+        },
+        {
+            "name": "p3.png"
+        },
+        {
+            "name": "p4.png"
+        },
+        {
+            "name": "p5.png"
+        },
+        {
+            "name": "p6.png"
+        },
+        {
+            "name": "p7.png"
+        },
+        {
+            "name": "p8.png"
+        },
+        {
+            "name": "p9.png"
+        }
+    ],
+    "updated_at": "2018-10-24 22:24:03",
+    "url": "https://github.com/fall2018-saltz/ya_lin8"
+}
