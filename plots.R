@@ -36,6 +36,7 @@ p3=p3+ expand_limits(x = us$long, y = us$lat) + coord_map()
 p3=p3+ ggtitle("USA Map")
 p3
 
+#most of the states lie between 7-10
 
 #hotelClean vs customer satisfaction
 p4=ggplot(hData,aes(jitter(hotelClean),overallCustSat))+geom_point()
