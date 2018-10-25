@@ -44,6 +44,7 @@ p4=ggplot(hData,aes(jitter(hotelClean),overallCustSat))+geom_point()
 p4
 
 #spread too much
+#many outliers
 #hotelFriendly vs customer satisfaction
 p5=ggplot(hData,aes(jitter(hotelFriendly),overallCustSat))+geom_point()
 p5
