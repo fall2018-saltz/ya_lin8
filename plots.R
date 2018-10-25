@@ -66,10 +66,12 @@ p6=ggplot(genMean,aes(gender,m1))
 p6=p6+geom_point()
 
 #males have higher rating
+
 #guestAge vs customer satisfaction
 p7=ggplot(hData,aes(jitter(guestAge),overallCustSat))+ geom_point()
 p7
 
+#range of the plot is 40-60
 #lengthOfStay vs customer satisfaction
 p8=ggplot(hData,aes(jitter(lengthOfStay),overallCustSat))+ geom_point()
 p8
