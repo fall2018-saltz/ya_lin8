@@ -37,6 +37,7 @@ p3=p3+ ggtitle("USA Map")
 p3
 
 #most of the states lie between 7-10
+#only 2 states have a value of 10 being the strongest
 
 #hotelClean vs customer satisfaction
 p4=ggplot(hData,aes(jitter(hotelClean),overallCustSat))+geom_point()
