@@ -45,10 +45,12 @@ p4
 
 #spread too much
 #many outliers
+
 #hotelFriendly vs customer satisfaction
 p5=ggplot(hData,aes(jitter(hotelFriendly),overallCustSat))+geom_point()
 p5
 
+#positive slope
 #to usethe library of dplyr
 #for data manipuations
 #here to calculate the average and then draw the plot based on that
