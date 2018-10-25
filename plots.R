@@ -72,10 +72,12 @@ p7=ggplot(hData,aes(jitter(guestAge),overallCustSat))+ geom_point()
 p7
 
 #range of the plot is 40-60
+
 #lengthOfStay vs customer satisfaction
 p8=ggplot(hData,aes(jitter(lengthOfStay),overallCustSat))+ geom_point()
 p8
 
+#mean stay is 1-4 nights
 #booking time vs customer satisfaction
 p9=ggplot(hData,aes(jitter(whenBookedTrip),overallCustSat))+ geom_point()
 p9
